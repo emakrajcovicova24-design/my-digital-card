@@ -1,236 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ema Krajčovičová | Digital Business Card</title>
- 
-<style>
-:root {
---primary: #2563eb;
---primary-dark: #1d4ed8;
---text: #1f2937;
---text-light: #6b7280;
---background: #f8fafc;
---card: #ffffff;
---border: #e5e7eb;
-}
- 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
- 
-body {
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-background: linear-gradient(135deg, #f8fafc 0%, #eef4ff 100%);
-color: var(--text);
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 2rem;
-}
- 
-.card {
-width: 100%;
-max-width: 800px;
-background: var(--card);
-border-radius: 28px;
-padding: 3rem;
-text-align: center;
-box-shadow:
-0 10px 30px rgba(0, 0, 0, 0.08),
-0 2px 10px rgba(0, 0, 0, 0.04);
-border: 1px solid var(--border);
-}
- 
-.profile-photo {
-width: 170px;
-height: 170px;
-border-radius: 50%;
-object-fit: cover;
-border: 5px solid #fff;
-box-shadow: 0 8px 25px rgba(37, 99, 235, 0.18);
-margin-bottom: 1.5rem;
-}
- 
-h1 {
-font-size: 2.4rem;
-font-weight: 700;
-margin-bottom: 0.5rem;
-color: var(--text);
-}
- 
-.headline {
-font-size: 1.15rem;
-color: var(--text-light);
-margin-bottom: 2rem;
-}
- 
-.about-section {
-margin-bottom: 2rem;
-}
- 
-.about-section h2 {
-font-size: 1.3rem;
-margin-bottom: 1rem;
-color: var(--text);
-}
- 
-.about-section p {
-font-size: 1.05rem;
-line-height: 1.8;
-color: var(--text-light);
-max-width: 650px;
-margin: 0 auto;
-}
- 
-.quote {
-background: #f3f7ff;
-border: 1px solid #dbeafe;
-border-radius: 18px;
-padding: 1.25rem;
-margin: 2rem auto;
-max-width: 650px;
-}
- 
-.quote p {
-font-style: italic;
-color: var(--primary-dark);
-font-size: 1.05rem;
-font-weight: 600;
-}
- 
-.buttons {
-display: flex;
-justify-content: center;
-gap: 1rem;
-flex-wrap: wrap;
-margin-top: 2rem;
-}
- 
-.btn {
-text-decoration: none;
-padding: 0.9rem 1.4rem;
-border-radius: 999px;
-font-weight: 600;
-transition: all 0.25s ease;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-min-width: 170px;
-}
- 
-.btn-primary {
-background: var(--primary);
-color: white;
-}
- 
-.btn-primary:hover {
-background: var(--primary-dark);
-transform: translateY(-2px);
-}
- 
-.btn-secondary {
-background: white;
-color: var(--text);
-border: 1px solid var(--border);
-}
- 
-.btn-secondary:hover {
-background: #f9fafb;
-transform: translateY(-2px);
-}
- 
-footer {
-margin-top: 2.5rem;
-padding-top: 1.5rem;
-border-top: 1px solid var(--border);
-color: var(--text-light);
-font-size: 0.9rem;
-}
- 
-@media (max-width: 768px) {
-body {
-padding: 1rem;
-}
- 
-.card {
-padding: 2rem 1.5rem;
-}
- 
-h1 {
-font-size: 2rem;
-}
- 
-.profile-photo {
-width: 140px;
-height: 140px;
-}
- 
-.buttons {
-flex-direction: column;
-align-items: center;
-}
- 
-.btn {
-width: 100%;
-max-width: 300px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ema Krajčovičová | HR Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            max-width: 480px;
+            width: 100%;
+            padding: 48px 40px;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff9a9e;
+            margin: 0 auto 24px;
+            box-shadow: 0 8px 24px rgba(255, 154, 158, 0.3);
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .headline {
+            font-size: 18px;
+            color: #ff6b9d;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .phrase {
+            font-size: 20px;
+            font-style: italic;
+            color: #4a4a6a;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .about {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 32px;
+            padding: 0 8px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-linkedin {
+            background: #0077b5;
+            color: white;
+        }
+
+        .btn-linkedin:hover {
+            background: #005885;
+        }
+
+        .btn-github {
+            background: #333;
+            color: white;
+        }
+
+        .btn-github:hover {
+            background: #000;
+        }
+
+        .btn-contact {
+            background: linear-gradient(135deg, #ff9a9e 0%, #ff6b9d 100%);
+            color: white;
+        }
+
+        .btn-contact:hover {
+            background: linear-gradient(135deg, #ff8a8e 0%, #ff5b8d 100%);
+        }
+
+        .footer {
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .btn {
+                flex: 1;
+                max-width: 140px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 32px 24px;
+            }
+
+            .name {
+                font-size: 28px;
+            }
+
+            .headline {
+                font-size: 16px;
+            }
+
+            .phrase {
+                font-size: 18px;
+            }
+
+            .about {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
- 
 <body>
-<main class="card">
-<img src="profile.jpg" alt="Ema Krajčovičová" class="profile-photo">
- 
-<h1>Ema Krajčovičová</h1>
- 
-<p class="headline">
-Master's Student in Human Resources • University Student & HR Intern
-</p>
- 
-<section class="about-section">
-<h2>About Me</h2>
-<p>
-I am a Master's student in Human Resources with a strong passion for
-HR, talent development, and helping people reach their full potential.
-I enjoy learning about recruitment, employee experience, and creating
-positive workplace environments where individuals and teams can thrive.
-</p>
-</section>
- 
-<div class="quote">
-<p>“Resilient, open-minded and ready to learn”</p>
-</div>
- 
-<div class="buttons">
-<a href="https://www.linkedin.com/in/ema-kraj%C4%8Dovi%C4%8Dov%C3%A1-360533350?originalSubdomain=sk"
-target="_blank"
-rel="noopener noreferrer"
-class="btn btn-primary">
-LinkedIn
-</a>
- 
-<a href="https://github.com/emakrajcovicova24-design"
-target="_blank"
-rel="noopener noreferrer"
-class="btn btn-secondary">
-GitHub
-</a>
- 
-<a href="mailto:emakrajcovicova24@gmail.com"
-class="btn btn-secondary">
-Contact Me
-</a>
-</div>
- 
-<footer>
-Built with AI • Deployed with GitHub Pages
-</footer>
-</main>
+    <div class="card">
+        <img src="profile.jpg" alt="Ema Krajčovičová" class="profile-photo">
+        
+        <h1 class="name">Ema Krajčovičová</h1>
+        <p class="headline">HR Professional</p>
+        
+        <p class="phrase">"Resilient, open-minded and ready to learn"</p>
+        
+        <p class="about">
+            Masters student in Human Resources, passionate about the field of HR and people development. I'm dedicated to creating positive workplace environments and helping individuals reach their full potential.
+        </p>
+        
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ema-kraj%C4%8Dovi%C4%8Dov%C3%A1-360533350?originalSubdomain=sk" target="_blank" class="btn btn-linkedin">
+                LinkedIn
+            </a>
+            <a href="https://github.com/emakrajcovicova24-design" target="_blank" class="btn btn-github">
+                GitHub
+            </a>
+            <a href="mailto:emakrajcovicova24@gmail.com" class="btn btn-contact">
+                Contact Me
+            </a>
+        </div>
+        
+        <div class="footer">
+            Built with AI • Deployed with GitHub Pages
+        </div>
+    </div>
 </body>
 </html>
